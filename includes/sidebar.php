@@ -18,6 +18,11 @@ $p = basename($_SERVER['PHP_SELF']);
         <span class="nav-text">จัดการช่าง</span>
     </a>
 
+    <a href="pending_technicians.php" class="nav-link <?php echo ($p == 'pending_technicians.php') ? 'active' : ''; ?>">
+        <i class="fa-solid fa-user-clock"></i> 
+        <span class="nav-text">อนุมัติช่างใหม่</span>
+    </a>
+
     <a href="manage_customers.php" class="nav-link <?php echo ($p == 'manage_customers.php' || $p == 'form_customer.php') ? 'active' : ''; ?>">
         <i class="fa-solid fa-users"></i> 
         <span class="nav-text">จัดการลูกค้า</span>
