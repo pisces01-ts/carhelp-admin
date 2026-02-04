@@ -53,12 +53,27 @@ $p = basename($_SERVER['PHP_SELF']);
         <span class="nav-text">เรื่องร้องเรียน</span>
     </a>
 
+    <a href="promotions.php" class="nav-link <?php echo ($p == 'promotions.php') ? 'active' : ''; ?>">
+        <i class="fa-solid fa-tags"></i> 
+        <span class="nav-text">โปรโมชั่น</span>
+    </a>
+
+    <a href="reports.php" class="nav-link <?php echo ($p == 'reports.php') ? 'active' : ''; ?>">
+        <i class="fa-solid fa-chart-bar"></i> 
+        <span class="nav-text">รายงานสถิติ</span>
+    </a>
+
     <a href="admin_logs.php" class="nav-link <?php echo ($p == 'admin_logs.php') ? 'active' : ''; ?>">
         <i class="fa-solid fa-history"></i> 
         <span class="nav-text">Activity Logs</span>
     </a>
 
     <div class="mt-auto mb-3">
+        <a href="manage_admins.php" class="nav-link <?php echo ($p == 'manage_admins.php') ? 'active' : ''; ?>">
+            <i class="fa-solid fa-users-cog"></i> 
+            <span class="nav-text">ผู้ดูแลระบบ</span>
+        </a>
+
         <a href="profile.php" class="nav-link <?php echo ($p == 'profile.php') ? 'active' : ''; ?>">
             <i class="fa-solid fa-user-shield"></i> 
             <span class="nav-text">ตั้งค่าบัญชี</span>
