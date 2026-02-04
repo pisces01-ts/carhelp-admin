@@ -48,6 +48,11 @@ $p = basename($_SERVER['PHP_SELF']);
         <span class="nav-text">รีวิวจากลูกค้า</span>
     </a>
 
+    <a href="manage_complaints.php" class="nav-link <?php echo ($p == 'manage_complaints.php') ? 'active' : ''; ?>">
+        <i class="fa-solid fa-exclamation-triangle"></i> 
+        <span class="nav-text">เรื่องร้องเรียน</span>
+    </a>
+
     <a href="admin_logs.php" class="nav-link <?php echo ($p == 'admin_logs.php') ? 'active' : ''; ?>">
         <i class="fa-solid fa-history"></i> 
         <span class="nav-text">Activity Logs</span>
